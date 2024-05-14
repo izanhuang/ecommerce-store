@@ -1,0 +1,35 @@
+.image-wrapper {
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem;
+}
+
+.image {
+  display: block;
+  max-width: 8rem;
+  max-height: 8rem;
+  height: auto;
+  width: auto;
+}
+
+.header-wrapper {
+  height: 4rem;
+  max-height: 4rem;
+  overflow: hidden;
+}
+
+.title,
+.price {
+  font-weight: 600;
+}
+
+.title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.subtitle {
+  font-size: 14px;
+}
