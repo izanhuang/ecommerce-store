@@ -9,12 +9,15 @@ import { PrimeReactProvider } from 'primereact/api';
 import 'primeicons/primeicons.css';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "/node_modules/primeflex/primeflex.css"
+import { Context } from './context/Context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <PrimeReactProvider>
-      <RouterProvider router={router} />
+      <Context.Provider value={{}}>
+        <App />
+      </Context.Provider>
     </PrimeReactProvider>
   </React.StrictMode>
 );
